@@ -1,0 +1,30 @@
+\documentclass[11.5pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[margin=1in]{geometry}
+\newcommand{\indep}{\rotatebox[origin=c]{90}{$\models$}}\begin{document}
+	
+	
+\title{B+Tree Index Design Report}
+\author{Rui Yin}
+\maketitle
+\section {Implementation Choices:}
+\begin{enumerate}
+ Insert key into leaf node and non leaf node\\
+Split leaf node and non leaf node.\\
+Every time when entered a node, I keep pages pinned.  \\
+Effciency: logn
+\end{enumerate}
+
+
+\section {Additional Design Choices}
+\begin{enumerate}
+When scan, will find the first scan node, and orderly traverse. 
+\end{enumerate}
+
+\section {If allow duplicate keys}
+\begin{enumerate}
+When there's duplicate keys, we can set a second key, and then use the second key instead. 
+\end{enumerate}
+\end{document}
+
+	
